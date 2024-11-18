@@ -1,0 +1,60 @@
+server:
+  port: 7777
+#  servlet:
+#    context-path: /test
+
+
+spring:
+  datasource:
+    url: "jdbc:mysql://localhost:3306/spring"
+    username: root
+    password: 1234
+
+    #db cua tiendat
+#    url: "jdbc:mysql://localhost:3306/springb3_security6"
+#    username: security_su
+#    password: 1234567@a$
+  servlet:
+   multipart:
+     enabled: true
+     max-file-size: 5MB
+     max-request-size: 10MB
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  thymeleaf:
+    cache: false
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: trantiendat1679@gmail.com
+    password: ckclltbdkatufiho
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+          ssl:
+            protocols: TLSv1.2
+
+
+#  mail:
+#    host: smtp.gmail.com
+#    port: 587
+#    username: trantiendat1679@gmail.com
+#    password: ckclltbdkatufiho
+#    properties:
+#      mail:
+#        smtp:
+#          auth: true
+#          starttls:
+#            enable: true
+#            required: true
+#          ssl:
+#            protocols: TLSv1.2
+
+
